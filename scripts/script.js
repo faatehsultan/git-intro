@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const STEP_COUNT = 15;
+  const STEP_COUNT = 18;
   let currentStep = 1;
 
   const updateBtnStates = () => {

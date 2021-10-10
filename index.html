@@ -217,8 +217,71 @@
           <img src="./images/steps/16.png" alt="" class="img-fluid rounded" />
         </div>
       </div>
+      <div class="step p-3 my-3" id="step16">
+        <div class="fs-5 fw-bold">Step 16 - Collaboration Guide: Pull</div>
+        <p>I've made changes from one system and pushed.</p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/17.png" alt="" class="img-fluid rounded" />
+        </div>
+        <p>
+          Use <code>git fetch origin master</code> and
+          <code>git pull origin master</code> to sync remote changes to local
+          repo on other system.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/1.8png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step17">
+        <div class="fs-5 fw-bold">
+          Step 17 - Collaboration Guide: Merge Conflicts
+        </div>
+        <p>
+          Now I've made changes to line 2 from one system and pushed. Also I've
+          changed line 2 on other system. Now, when we try to merge these, it
+          will raise conflict. Here's how to deal with it.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/19.png" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/20.png" alt="" class="img-fluid rounded" />
+        </div>
+        <p>
+          Now it is giving merge conflicts on other machine when i pull remote
+          changes. Remember, anything between <code><<<<<<< HEAD</code> and
+          <code>=======</code> is local change and anything between
+          <code>=======</code> and <code>>>>>>>> COMMIT_HASH</code> is upcoming
+          changes from remote. I want to merge remote so I will delete my own
+          changes and merge remote changes.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/21.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step18">
+        <div class="fs-5 fw-bold">
+          Step 18 - Collaboration Guide: Branching
+        </div>
+        <p>
+          Now if I'm working on a project and want to add a new feature, I won't add it directly to prevent doing harm to previous code. Instead, I will create a new branch and add the new feature to that branch. After I'm sure there's no problem, I'll merge the new branch to master and push it to remote repository to make it available to other developers.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/22.png" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/23.png" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/24.png" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/25.png" alt="" class="img-fluid rounded" />
+        </div>
+        <p>So Now, everything is working fine and previous code is also safe.</p>
     </main>
-
+    <br>
+    <br>
     <div class="footer py-2">
       <div class="container">
         <div class="text-center">
