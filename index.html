@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Git Workflow Introduction for Beginners</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header pb-0 border-bottom border-dark">
+      <div
+        class="container py-2 d-flex justify-content-center align-items-center"
+      >
+        <a
+          href="index.html"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png"
+            alt="Git Workflow Introduction for Beginners"
+            width="50px"
+            class="logo img-fluid mx-2"
+          />
+          <div class="fs-2 fw-bold">Git Workflow Intro</div>
+        </a>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <main class="container pt-5 pb-4">
+      <div class="intro">
+        <div class="fs-4 fw-bold">
+          <i class="bi bi-info-circle"></i> About this project
+        </div>
+        <p>
+          This project is designed to guide you throughout the Git and Github
+          project workflow and how to store each commit in a way that whenever
+          required, you can easily rollback and maintain a complete editing
+          history of the project.
+        </p>
+      </div>
+      <br />
+      <div
+        class="
+          btnContainer
+          d-flex
+          py-1
+          px-2
+          justify-content-center
+          align-items-center
+        "
+      >
+        <button class="btn rounded-pill text-white p-0 mx-2" id="previousBtn">
+          <h1><i class="bi bi-arrow-left-circle-fill"></i></h1>
+        </button>
+        <button class="btn rounded-pill text-white p-0 mx-2" id="nextBtn">
+          <h1><i class="bi bi-arrow-right-circle-fill"></i></h1>
+        </button>
+      </div>
+      <br />
+      <div class="step p-3 my-3" id="step1">
+        <div class="fs-5 fw-bold">Step 1 - Create New Local Repository</div>
+        <p>
+          Use <code>git init</code> to create a new repository on your local
+          storage.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/1.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step2">
+        <div class="fs-5 fw-bold">Step 2 - Check Repo Status</div>
+        <p>
+          Use <code>git status</code> to check the current status of repository.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/2.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step3">
+        <div class="fs-5 fw-bold">Step 3 - Create some content</div>
+        <p>Create file and add some text into it for demonstration</p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/3.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step4">
+        <div class="fs-5 fw-bold">Step 4 - Add stuff to staging area</div>
+        <p>
+          Use <code>git add .</code> to add content to staging area. Note: you
+          can replace <code>.</code> with any file names.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/4.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step5">
+        <div class="fs-5 fw-bold">
+          Step 5 - Modifying while being on staging area
+        </div>
+        <p>Again edit files and check the status</p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/6.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step6">
+        <div class="fs-5 fw-bold">Step 6 - Checking Diff</div>
+        <p>
+          Use <code>git diff</code> to check changes made on lines in the files
+          that are currently staged.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/7.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step7">
+        <div class="fs-5 fw-bold">Step 7 - Commit your changes</div>
+        <p>
+          Use <code>git commit -m "COMMIT MESSAGE"</code> to save and commit
+          your changes and you can view the commit history using
+          <code>git log</code> command
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/8.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step8">
+        <div class="fs-5 fw-bold">Step 8 - Make further changes</div>
+        <p>
+          I've made some changes in the file again as shown by current status
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/9.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step9">
+        <div class="fs-5 fw-bold">Step 9 - Commit new changes</div>
+        <p>Again commit fresh changes</p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/10.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step10">
+        <div class="fs-5 fw-bold">Step 10 - Create Remote Repo on GitHub</div>
+        <p>
+          Login to <b><a href="https://github.com">Github</a></b> and create a
+          new repository to work with.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/11.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step11">
+        <div class="fs-5 fw-bold">
+          Step 11 - Our fresh new remote repository
+        </div>
+        <p>Copy the url of new reposity</p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/12.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step12">
+        <div class="fs-5 fw-bold">
+          Step 12 - Connect local repo to remote repo
+        </div>
+        <p>
+          Connect remote to local via command
+          <code>git remote add REMOTE_NAME REMOTE_URL</code> as shown below.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/13.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step13">
+        <div class="fs-5 fw-bold">Step 13 - Push local changes to remote</div>
+        <p>
+          Use <code>git push REMOTE_NAME BRANCH_NAME</code> to push local
+          changes to remote in that branch.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/14.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step14">
+        <div class="fs-5 fw-bold">Step 14 - Remote Repo</div>
+        <p>
+          Remote repository containing the changes made on the local repository.
+        </p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/15.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="step p-3 my-3" id="step15">
+        <div class="fs-5 fw-bold">Step 15 - Check Commit Log</div>
+        <p>Use <code>git log</code> to check commit history.</p>
+        <div class="d-flex w-100 justify-content-center">
+          <img src="./images/steps/16.png" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </main>
+
+    <div class="footer py-2">
+      <div class="container">
+        <div class="text-center">
+          <small>
+            Made with <i class="bi bi-heart-fill"></i> and
+            <i class="bi bi-cup-fill"></i> by
+            <span class="text-orange"
+              ><b
+                ><a href="https://github.com/faatehsultan"
+                  >Syed Faateh Sultan Kazmi</a
+                ></b
+              ></span
+            >
+          </small>
+          -
+          <small>
+            Contribute to this project on
+            <span class="text-orange"
+              ><b
+                ><a href="https://github.com/faatehsultan/git-intro"
+                  >GitHub</a
+                ></b
+              ></span
+            >
+            <i class="bi bi-emoji-smile"></i>
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript jquery to handle working of the page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const STEP_COUNT = 15;
+        let currentStep = 1;
+
+        const updateBtnStates = () => {
+          if (currentStep == 1) {
+            $("#previousBtn").prop("disabled", true);
+          } else {
+            $("#previousBtn").attr("disabled", false);
+          }
+
+          if (currentStep == STEP_COUNT) {
+            $("#nextBtn").prop("disabled", true);
+          } else {
+            $("#nextBtn").attr("disabled", false);
+          }
+        };
+
+        // disable all steps except first on page load
+        $(".step").hide();
+        $("#step1").show();
+        updateBtnStates();
+
+        $("#nextBtn").on("click", () => {
+          if (currentStep < STEP_COUNT) {
+            $(`#step${currentStep}`).hide();
+            currentStep++;
+            $(`#step${currentStep}`).show();
+          }
+          updateBtnStates();
+        });
+
+        $("#previousBtn").on("click", () => {
+          if (currentStep > 1) {
+            $(`#step${currentStep}`).hide();
+            currentStep--;
+            $(`#step${currentStep}`).show();
+          }
+          updateBtnStates();
+        });
+      });
+    </script>
+  </body>
+</html>
