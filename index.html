@@ -19,10 +19,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Git Workflow Introduction for Beginners</title>
   </head>
   <body>
+    <div id="particles-js"></div>
     <!-- header -->
     <div class="header pb-0 border-bottom border-dark">
       <div
@@ -248,50 +249,18 @@
       </div>
     </div>
 
-    <!-- javascript jquery to handle working of the page -->
+    <!-- javascripts setup -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/particles.min.js"></script>
     <script>
-      $(document).ready(function () {
-        const STEP_COUNT = 15;
-        let currentStep = 1;
-
-        const updateBtnStates = () => {
-          if (currentStep == 1) {
-            $("#previousBtn").prop("disabled", true);
-          } else {
-            $("#previousBtn").attr("disabled", false);
-          }
-
-          if (currentStep == STEP_COUNT) {
-            $("#nextBtn").prop("disabled", true);
-          } else {
-            $("#nextBtn").attr("disabled", false);
-          }
-        };
-
-        // disable all steps except first on page load
-        $(".step").hide();
-        $("#step1").show();
-        updateBtnStates();
-
-        $("#nextBtn").on("click", () => {
-          if (currentStep < STEP_COUNT) {
-            $(`#step${currentStep}`).hide();
-            currentStep++;
-            $(`#step${currentStep}`).show();
-          }
-          updateBtnStates();
-        });
-
-        $("#previousBtn").on("click", () => {
-          if (currentStep > 1) {
-            $(`#step${currentStep}`).hide();
-            currentStep--;
-            $(`#step${currentStep}`).show();
-          }
-          updateBtnStates();
-        });
-      });
+      particlesJS.load(
+        "particles-js",
+        "./scripts/particlesjs-config.json",
+        function () {
+          console.log("callback - particles.js config loaded");
+        }
+      );
     </script>
   </body>
 </html>
